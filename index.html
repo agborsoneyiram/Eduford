@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This makes the website responsive--->
+<title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><!---Link for the font, Poppins-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!---Link for the "close button" and all other iconts/fonts-->
+   
+</head>
+ <body>
+    <section class="header"> <!--"Section" here represents the space that the code typed after occupies. 
+        In this case, the list below will be the header on every single page on the webpage-->
+        <nav> <!---The logo is added here-->
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">         
+                
+                <i class="fa fa-times" onclick="hideMenu()" ></i><!--When the X-button is clicked, it hides the side menu-->
+                <ul> <!-- (Unordered lists)The order of the below list won't make a significant impact on the code itself -->
+                    <li><a href="">HOME</a></li> <!---The "a" before "href" shows that what comes next is a hyperlink(it leads to another section on the website)-->
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+                 <i class="fa fa-bars" onclick="showMenu()"></i> <!---A "bars" icon was added to the headers on the top-right of the screen
+                 and when selcted, the hidden menu appears -->
+        </nav>
+        
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making a website is now one of the easiest things in the world.<br>
+               You just need to learn HTML, CSS, and Javascript, and you are good to go!</p>
+                <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!---COURSE-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Discover our diverse range of courses tailored to your interests and goals.</p>
+
+<div class = "row">
+    <div class="course-col">
+        <h3>Intermediate</h3>
+        <p> Designed to build upon foundational knowledge, these courses offer hands-on learning experiences, equipping you with the skills needed to excel in your field.</p>
+    </div>
+    <div CLASS="course-col">
+<h3>Degree</h3>
+<p>Gain invaluable insights through a blend of theory and practical learning, preparing you for a successful career path ahead."</p>
+    </div>
+    <div CLASS="course-col">
+        <h3>Post Graduation</h3>
+        <p>These advanced courses offer a deep dive into cutting-edge research and practical skills, empowering you to excel in your career and make a significant impact in your industry</p>
+            </div>
+</div>
+
+    </section>
+    <!---CAMPUS-->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Experience Our Global Campus, a melting pot of cultures and ideas. From our modern facilities to our diverse community, we offer a truly international learning environment.</p>
+<div class="row">
+    <div class="campus-col">
+        <img src="Images/london.png">
+        <div class="layer">
+            <h3>LONDON</h3>
+        </div>
+    </div>
+<div class="campus-col">
+    <img src="Images/newyork.png">
+    <div class="layer">
+        <h3>NEW YORK</h3>
+    </div>
+</div>
+<div class="campus-col">
+    <img src="Images/washington.png">
+    <div class="layer">
+        <h3>WASHINGTON</h3>
+    </div>
+</div>
+</div>
+
+    </section>
+
+
+
+<!---FACILITIES-->
+<section class="facilities">
+<h1>Our Facilities</h1>
+<p>Discover Our Facilities, equipped with state-of-the-art amenities designed to enhance your learning experience.</p>
+<div class="row">
+    <div class="facilities-col">
+        <img src="Images/library.png">
+        <h3>World-Class Library</h3>
+        <p>Explore our world-class library, housing a vast collection of resources to fuel your curiosity and academic pursuits. Immerse yourself in a haven of knowledge and inspiration</p>
+    </div>
+    <div class="facilities-col">
+        <img src="Images/basketball.png">
+        <h3>Largest Play Ground</h3>
+        <p>Unwind in our expansive playground, the largest in the area, offering plenty of space for recreation and relaxation. Enjoy the outdoors with various activities for a refreshing break.</p>
+    </div>
+    <div class="facilities-col">
+        <img src="Images/cafeteria.png">
+        <h3>Tasty and Healthy Food</h3>
+        <p>Savor the flavors of our tasty and nutritious meals, carefully prepared to cater to your palate and health. Experience a delightful dining journey with our selection of wholesome dishes.</p>
+    </div>
+</div>
+</section>
+
+
+<!------Testimonials ------>
+<section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>Read what our students have to say about their enriching experiences and newfound knowledge gained during their time with us</p>
+<div class="row"> <!---div.row (short for creating a class)-->
+<div class="testimonials-col">
+    <img src="Images/user1.jpg">
+    <div>
+        <p>"I can't recommend this school enough. The emphasis on practical learning allowed me to immediately apply what I learned. The close-knit community and passionate instructors made every class engaging and worthwhile. Leaving here, I feel confident and ready for whatever comes next."</p>
+        <h3>Christine Berkley</h3>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+</div>
+<div class="testimonials-col">
+    <img src="Images/user2.jpg">
+    <div>
+        <p>"My experience at this school has been transformative. The faculty's dedication to our success, combined with practical, hands-on learning, has equipped me with skills I never thought possible. 
+        The modern facilities and supportive environment truly set this school apart."</p>
+        <h3>David Byer</h3>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+</div>
+
+    </section>
+<!---Call To Action-->
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses<br> ANYWHERE In The World!!!!</h1>
+<!---a href="">CONTACT US</a>--->
+<a href="" class="hero-btn">CONTACT US</a>
+
+</section>
+
+<!---Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Connect with Us! Explore our social media channels and stay updated on news, events, and more</p>
+<div class="icons">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+</div>
+<p>Made With <i class="fa fa-heartbeat"></i> by Easy Tutorials</p>
+    </section>
+
+
+
+
+
+
+<!--JavaScript for Toggle Menu--->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right= "0";
+}
+function hideMenu(){
+    navLinks.style.right= "-200px";
+}
+
+
+</script>
+
+ </body>
+</html>
